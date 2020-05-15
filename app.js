@@ -15,5 +15,5 @@ mongoose.connect(process.env.CONNECTION_STRING, {
 });
 
 app.listen("5000", () => {
-  console.log("server running");
+  console.log("server running ");
 });
