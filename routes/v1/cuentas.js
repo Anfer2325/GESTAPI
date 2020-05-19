@@ -6,6 +6,8 @@ const isAuthenticated = require("../../middleware/isAuthenticated");
 //get a list of account of an specific bufete from db
 router.get("/cuentas", isAuthenticated, (req, res) => {
   console.log(req.gestor);
+
+  console.log("test " + test);
   res.send({ type: "GET" });
 });
 
