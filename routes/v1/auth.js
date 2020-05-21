@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 const validator = require("../../validations/validator");
 //logins a user
 router.post("/login", (req, res) => {
+  console.log("test");
   // console.log(req.headers.cookie);
   var body = req.body;
   //look for the username and password in the db

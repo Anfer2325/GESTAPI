@@ -39,6 +39,7 @@ const clienteSchema = mongoose.Schema({
       (val) => validator.idExist("Empresa", val),
       "La empresa tiene que existir en la base de datos",
     ],
+    required: true,
   },
   domicilio: {
     type: String,
